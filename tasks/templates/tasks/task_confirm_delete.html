@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock title %}
+{% block content %}
+<div class="delete-form-container">
+  <a href="{% url 'tasks' %}">cancel</a>
+  <form method="POST">
+    {% csrf_token %}
+    <p>Delete task, {{task}} ?</p>
+    <input type="Submit" value="Delete">
+  </form>
+</div>
+{% endblock content %}

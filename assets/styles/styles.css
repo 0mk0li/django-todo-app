@@ -1,0 +1,669 @@
+/* General styles for the navigation bar */
+body {
+  background-color: #fffae5;
+}
+nav {
+  background-color: #f9dc5c; /* Primary yellow color */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the user info and logout button */
+nav p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+nav form {
+  margin: 0;
+}
+
+nav button {
+  background-color: #fae588; /* Light yellow for the button */
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #fcefb4; /* Lighter yellow on hover */
+}
+
+/* Styles for the login and register links */
+nav div {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #fdf8e1; /* Light cream color for links */
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #fcefb4; /* Lighter yellow on hover */
+}
+
+/* General container for the tasks page */
+.task-container {
+  padding: 20px;
+  background-color: #fdf8e1; /* Light cream background */
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.task-header {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add task link styling */
+.add-task-link a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f9dc5c; /* Primary yellow */
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-link a:hover {
+  background-color: #fae588; /* Lighter yellow on hover */
+}
+
+/* Search form styling */
+.search-form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #f9dc5c;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #f9dc5c; /* Primary yellow */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #fae588; /* Lighter yellow on hover */
+}
+
+/* Task list styling */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Task item styling */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fcefb4; /* Light yellow */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #fae588; /* Lighter yellow on hover */
+}
+
+/* Task title styling */
+.task-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Task actions styling */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-action {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  background-color: #fdf8e1; /* Light cream */
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.task-action:hover {
+  background-color: #f9dc5c; /* Primary yellow on hover */
+}
+
+.delete-action {
+  color: #ff6b6b; /* Red color for delete action */
+}
+
+.delete-action:hover {
+  background-color: #ff6b6b; /* Red background on hover */
+  color: #fff;
+}
+
+/* No tasks message styling */
+.no-tasks {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Styling for completed tasks */
+.task-item.completed {
+  background-color: #e0e0e0; /* Light gray background for completed tasks */
+  opacity: 0.7; /* Reduce opacity to indicate completion */
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through; /* Strike through the task title */
+  color: #777; /* Gray out the text */
+}
+
+.task-item.completed .task-action {
+  background-color: #d0d0d0; /* Light gray for action buttons */
+  color: #777; /* Gray out the text */
+}
+
+.task-item.completed .task-action:hover {
+  background-color: #c0c0c0; /* Slightly darker gray on hover */
+}
+
+.task-item.completed .delete-action {
+  color: #ff6b6b; /* Keep delete action red */
+}
+
+.task-item.completed .delete-action:hover {
+  background-color: #ff6b6b; /* Red background on hover */
+  color: #fff;
+}
+
+/* Back link styling */
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  background-color: #f9dc5c; /* Primary yellow */
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: #fae588; /* Lighter yellow on hover */
+}
+
+/* Form container styling */
+.task-form {
+  background-color: #fdf8e1; /* Light cream background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Form field styling */
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f9dc5c;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  border-color: #fae588; /* Lighter yellow on focus */
+  outline: none;
+}
+
+/* Error message styling */
+.form-field.has-error input,
+.form-field.has-error textarea,
+.form-field.has-error select {
+  border-color: #ff6b6b; /* Red border for error fields */
+}
+
+.error-message {
+  color: #ff6b6b; /* Red color for error messages */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Submit button styling */
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9dc5c; /* Primary yellow */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #fae588; /* Lighter yellow on hover */
+}
+
+/* Checkbox container styling */
+.task-form p {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox input styling */
+.task-form input[type="checkbox"] {
+  appearance: none; /* Remove default browser styling */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f9dc5c; /* Yellow border */
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkbox checked state */
+.task-form input[type="checkbox"]:checked {
+  background-color: #f9dc5c; /* Yellow background when checked */
+  border-color: #f9dc5c;
+}
+
+/* Checkbox checkmark styling */
+.task-form input[type="checkbox"]:checked::before {
+  content: "✔"; /* Unicode checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #333; /* Dark color for the checkmark */
+}
+
+/* Checkbox hover state */
+.task-form input[type="checkbox"]:hover {
+  border-color: #fae588; /* Lighter yellow on hover */
+}
+
+/* Checkbox focus state */
+.task-form input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(249, 220, 92, 0.5); /* Yellow focus ring */
+}
+
+.delete-form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdf8e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.delete-form-container p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.delete-form-container input[type="Submit"] {
+  background-color: #f9dc5c;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-form-container input[type="Submit"]:hover {
+  background-color: #fae588;
+}
+
+.delete-form-container a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border: 1px solid #fcefb4;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.delete-form-container a:hover {
+  background-color: #fcefb4;
+  border-color: #fae588;
+}
+
+.task-detail-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdf8e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-detail-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fcefb4;
+  padding-bottom: 10px;
+}
+
+.task-detail-container p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.task-detail-container a {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border: 1px solid #fcefb4;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.task-detail-container a:hover {
+  background-color: #fcefb4;
+  border-color: #fae588;
+}
+
+.task-detail-container .completed {
+  color: green;
+  font-weight: bold;
+}
+.task-detail-container .pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.task-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdf8e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-form-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fcefb4;
+  padding-bottom: 10px;
+}
+
+.task-form-container .form-group {
+  margin-bottom: 20px;
+}
+
+.task-form-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.task-form-container input[type="text"],
+.task-form-container textarea {
+  width: calc(100% - 22px); /* Subtract padding and border */
+  padding: 10px;
+  border: 1px solid #fcefb4;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.task-form-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.task-form-container input[type="Submit"] {
+  background-color: #f9dc5c;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.task-form-container input[type="Submit"]:hover {
+  background-color: #fae588;
+}
+
+.task-form-container .errorlist {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  color: red;
+}
+
+.task-form-container .errorlist li {
+  margin-bottom: 5px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdf8e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  text-align: left;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fcefb4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-container input[type="submit"] {
+  background-color: #f9dc5c;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #fae588;
+}
+
+.login-container .errorlist {
+  color: red;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.login-container .errorlist li {
+  margin-bottom: 5px;
+}
+
+.login-container p {
+  margin-top: 20px;
+  color: #555;
+}
+
+.login-container a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+  color: #fae588;
+}
+
+.login-container p.error_message {
+  color: red;
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdf8e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-container form {
+  text-align: left;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fcefb4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.register-container input[type="submit"] {
+  background-color: #f9dc5c;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.register-container input[type="submit"]:hover {
+  background-color: #fae588;
+}
+
+.register-container .errorlist {
+  color: red;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.register-container .errorlist li {
+  margin-bottom: 5px;
+}
+
+.register-container p {
+  margin-top: 20px;
+  color: #555;
+}
+
+.register-container a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.register-container a:hover {
+  color: #fae588;
+}
+
+.register-container p.error_message {
+  color: red;
+}
